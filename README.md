@@ -1,89 +1,75 @@
-# Gerrit Code Review
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# gerrit
 
-[Gerrit](https://www.gerritcodereview.com) is a code review and project
-management tool for Git based projects.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/gerrit)
 
-[![Build Status](https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/badge/icon)](https://gerrit-ci.gerritforge.com/view/Gerrit/job/Gerrit-bazel-master/)
-![Maven Central](https://img.shields.io/maven-central/v/com.google.gerrit/gerrit-war)
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Objective
+## Architecture
 
-Gerrit makes reviews easier by showing changes in a side-by-side display,
-and allowing inline comments to be added by any reviewer.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Gerrit simplifies Git based project maintainership by permitting any
-authorized user to submit changes to the master Git repository, rather
-than requiring all approved changes to be merged in by hand by the project
-maintainer.
+## Install
 
-## Documentation
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-For information about how to install and use Gerrit, refer to
-[the documentation](https://gerrit-review.googlesource.com/Documentation/index.html).
+```bash
+git clone https://github.com/Interested-Deving-1896/gerrit.git
+cd gerrit
+```
 
-## Source
+## Usage
 
-Our canonical Git repository is located on [googlesource.com](https://gerrit.googlesource.com/gerrit).
-There is a mirror of the repository on [Github](https://github.com/GerritCodeReview/gerrit).
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-## Reporting bugs
+## Configuration
 
-Please report bugs on the [issue tracker](https://bugs.chromium.org/p/gerrit/issues/list).
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-## Contribute
+## CI
 
-Gerrit is the work of hundreds of contributors. We appreciate your help!
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-Please read the [contribution guidelines](https://gerrit.googlesource.com/gerrit/+/master/SUBMITTING_PATCHES).
+## Mirror chain
 
-Note that we do not accept Pull Requests via the Github mirror.
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/gerrit`](https://github.com/Interested-Deving-1896/gerrit) and mirrored through:
 
-## Getting in contact
+```
+Interested-Deving-1896/gerrit  ──►  OpenOS-Project-OSP/gerrit  ──►  OpenOS-Project-Ecosystem-OOC/gerrit
+```
 
-The Developer Mailing list is [repo-discuss on Google Groups](https://groups.google.com/forum/#!forum/repo-discuss).
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
 ## License
 
-Gerrit is provided under the Apache License 2.0.
-
-## Build
-
-Install [Bazel](https://bazel.build/versions/master/docs/install.html) and run the following:
-
-        git clone --recurse-submodules https://gerrit.googlesource.com/gerrit
-        cd gerrit && bazel build release
-
-## Install binary packages (Deb/Rpm)
-
-The instruction how to configure GerritForge/BinTray repositories is
-[here](https://gitenterprise.me/2015/02/27/gerrit-2-10-rpm-and-debian-packages-available/)
-
-On Debian/Ubuntu run:
-
-        apt-get update && apt-get install gerrit=<version>-<release>
-
-_NOTE: release is a counter that starts with 1 and indicates the number of packages that have
-been released with the same version of the software._
-
-On CentOS/RedHat run:
-
-        yum clean all && yum install gerrit-<version>[-<release>]
-
-On Fedora run:
-
-        dnf clean all && dnf install gerrit-<version>[-<release>]
-
-## Use pre-built Gerrit images on Docker
-
-Docker images of Gerrit are available on [DockerHub](https://hub.docker.com/u/gerritforge/)
-
-To run a CentOS 8 based Gerrit image:
-
-        docker run -p 8080:8080 gerritcodereview/gerrit[:version]-centos8
-
-To run a Ubuntu 20.04 based Gerrit image:
-
-        docker run -p 8080:8080 gerritcodereview/gerrit[:version]-ubuntu20
-
-_NOTE: release is optional. Last released package of the version is installed if the release
-number is omitted._
+<!-- AI:start:license -->
+[Apache-2.0](https://github.com/Interested-Deving-1896/gerrit/blob/master/COPYING) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
